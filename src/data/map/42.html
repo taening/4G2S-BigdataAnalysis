@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_105dc3857f84406f9e7e62554608d57f {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_105dc3857f84406f9e7e62554608d57f" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_105dc3857f84406f9e7e62554608d57f = L.map(
+        'map_105dc3857f84406f9e7e62554608d57f', {
+        center: [37.62484275, 127.07237020000001],
+        zoom: 15,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_b0b2751078824940bdfe6952e272131e = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 12,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_105dc3857f84406f9e7e62554608d57f);
+    
+        var marker_8f2459830cf043aa8c8ee6d6c665f7b9 = L.marker(
+            [37.62484275, 127.07237020000001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_105dc3857f84406f9e7e62554608d57f);
+        
+    
+
+                var icon_9062336aaebf407391e5115bd1eec6a6 = L.AwesomeMarkers.icon({
+                    icon: 'None',
+                    iconColor: 'white',
+                    markerColor: 'darkblue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8f2459830cf043aa8c8ee6d6c665f7b9.setIcon(icon_9062336aaebf407391e5115bd1eec6a6);
+            
+    
+            var popup_ca7d305194ed4256bffbd2761e65f75a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_45903ee54d3440a086c87cd752845bf9 = $('<div id="html_45903ee54d3440a086c87cd752845bf9" style="width: 100.0%; height: 100.0%;"><예측> 커피</div>')[0];
+                popup_ca7d305194ed4256bffbd2761e65f75a.setContent(html_45903ee54d3440a086c87cd752845bf9);
+            
+
+            marker_8f2459830cf043aa8c8ee6d6c665f7b9.bindPopup(popup_ca7d305194ed4256bffbd2761e65f75a)
+            ;
+
+            
+        
+    
+            var marker_cluster_215f953c263341e0b1130403d1e0babd = L.markerClusterGroup({});
+            map_105dc3857f84406f9e7e62554608d57f.addLayer(marker_cluster_215f953c263341e0b1130403d1e0babd);
+            
+    
+        var marker_11f51d06d469439182f4448ec8d08177 = L.marker(
+            [37.6263570777, 127.0724178064],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_215f953c263341e0b1130403d1e0babd);
+        
+    
+
+                var icon_84b65658d82549238d08e941e851f304 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_11f51d06d469439182f4448ec8d08177.setIcon(icon_84b65658d82549238d08e941e851f304);
+            
+    
+            var popup_757d0ab2a4ce4964932100dcc886e361 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_cbaac18b7a6c4493884a20089a1ea65a = $('<div id="html_cbaac18b7a6c4493884a20089a1ea65a" style="width: 100.0%; height: 100.0%;"><정류장> 공릉역4번출구</div>')[0];
+                popup_757d0ab2a4ce4964932100dcc886e361.setContent(html_cbaac18b7a6c4493884a20089a1ea65a);
+            
+
+            marker_11f51d06d469439182f4448ec8d08177.bindPopup(popup_757d0ab2a4ce4964932100dcc886e361)
+            ;
+
+            
+        
+    
+        var marker_608df67880d0405aab7e587c558f663c = L.marker(
+            [37.625196221799996, 127.0713664735],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_215f953c263341e0b1130403d1e0babd);
+        
+    
+
+                var icon_0fcb7523348940838ea804dd45236e32 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_608df67880d0405aab7e587c558f663c.setIcon(icon_0fcb7523348940838ea804dd45236e32);
+            
+    
+            var popup_c78e5a29f68541dc80a6a2303251f816 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_698356e8e8e84666b765a8c96fc65028 = $('<div id="html_698356e8e8e84666b765a8c96fc65028" style="width: 100.0%; height: 100.0%;"><정류장> 공릉신도2차아파트</div>')[0];
+                popup_c78e5a29f68541dc80a6a2303251f816.setContent(html_698356e8e8e84666b765a8c96fc65028);
+            
+
+            marker_608df67880d0405aab7e587c558f663c.bindPopup(popup_c78e5a29f68541dc80a6a2303251f816)
+            ;
+
+            
+        
+    
+        var marker_ca540a9ddbea44d5a9065738719cd2bf = L.marker(
+            [37.6254122748, 127.0715005195],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_215f953c263341e0b1130403d1e0babd);
+        
+    
+
+                var icon_e5d8f752361d400dbbe699b89ecd311a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ca540a9ddbea44d5a9065738719cd2bf.setIcon(icon_e5d8f752361d400dbbe699b89ecd311a);
+            
+    
+            var popup_c7b052a8cf754c019feee39cf550b7e4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_358cc7e4b98149508e8a7b091a59c7fc = $('<div id="html_358cc7e4b98149508e8a7b091a59c7fc" style="width: 100.0%; height: 100.0%;"><정류장> 공릉신도2차아파트</div>')[0];
+                popup_c7b052a8cf754c019feee39cf550b7e4.setContent(html_358cc7e4b98149508e8a7b091a59c7fc);
+            
+
+            marker_ca540a9ddbea44d5a9065738719cd2bf.bindPopup(popup_c7b052a8cf754c019feee39cf550b7e4)
+            ;
+
+            
+        
+    
+        var marker_f153cd15d5d640e889700f62ac30ce01 = L.marker(
+            [37.6250138329, 127.07197580270001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_215f953c263341e0b1130403d1e0babd);
+        
+    
+
+                var icon_e612e95bb28643afb8030d6585d2cffc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f153cd15d5d640e889700f62ac30ce01.setIcon(icon_e612e95bb28643afb8030d6585d2cffc);
+            
+    
+            var popup_1328a47b1a2543319fd1637ff079cd55 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_18b297f6781c4e139f6d6ae92773771f = $('<div id="html_18b297f6781c4e139f6d6ae92773771f" style="width: 100.0%; height: 100.0%;"><정류장> 건민약국앞</div>')[0];
+                popup_1328a47b1a2543319fd1637ff079cd55.setContent(html_18b297f6781c4e139f6d6ae92773771f);
+            
+
+            marker_f153cd15d5d640e889700f62ac30ce01.bindPopup(popup_1328a47b1a2543319fd1637ff079cd55)
+            ;
+
+            
+        
+    
+        var marker_628922d8a9f4408ea225ccf737a7e082 = L.marker(
+            [37.6252418718, 127.071869529],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_215f953c263341e0b1130403d1e0babd);
+        
+    
+
+                var icon_785c98a7784e4c988fc7aa6c64bae78f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_628922d8a9f4408ea225ccf737a7e082.setIcon(icon_785c98a7784e4c988fc7aa6c64bae78f);
+            
+    
+            var popup_7213adcbb33a4f1dbb53f9e93be32b3c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1eed348e3e064078bf7aa14cbfc57942 = $('<div id="html_1eed348e3e064078bf7aa14cbfc57942" style="width: 100.0%; height: 100.0%;"><정류장> 건민약국앞</div>')[0];
+                popup_7213adcbb33a4f1dbb53f9e93be32b3c.setContent(html_1eed348e3e064078bf7aa14cbfc57942);
+            
+
+            marker_628922d8a9f4408ea225ccf737a7e082.bindPopup(popup_7213adcbb33a4f1dbb53f9e93be32b3c)
+            ;
+
+            
+        
+    
+            var marker_cluster_a0ed336b6d564126958f5534dc0171be = L.markerClusterGroup({});
+            map_105dc3857f84406f9e7e62554608d57f.addLayer(marker_cluster_a0ed336b6d564126958f5534dc0171be);
+            
+    
+        var marker_e66383b609524dcd93ce4bbb21d596f1 = L.marker(
+            [37.6252085, 127.07231329999999],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_a0ed336b6d564126958f5534dc0171be);
+        
+    
+
+                var icon_5bbb7b37c27947efa275a33b3304a711 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'purple',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e66383b609524dcd93ce4bbb21d596f1.setIcon(icon_5bbb7b37c27947efa275a33b3304a711);
+            
+    
+            var popup_7073f000759a431092e43c8b78d4626c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_207c0af1f36147ee8f0785e6b07a5275 = $('<div id="html_207c0af1f36147ee8f0785e6b07a5275" style="width: 100.0%; height: 100.0%;"><횡단보도> 06-0000016216</div>')[0];
+                popup_7073f000759a431092e43c8b78d4626c.setContent(html_207c0af1f36147ee8f0785e6b07a5275);
+            
+
+            marker_e66383b609524dcd93ce4bbb21d596f1.bindPopup(popup_7073f000759a431092e43c8b78d4626c)
+            ;
+
+            
+        
+    
+        var marker_8d3c16a5f4684b698d3e3c2d771e1d19 = L.marker(
+            [37.6250755, 127.07170819999999],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_a0ed336b6d564126958f5534dc0171be);
+        
+    
+
+                var icon_4d434df29c974405a87de6eeb0bd8f01 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'purple',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8d3c16a5f4684b698d3e3c2d771e1d19.setIcon(icon_4d434df29c974405a87de6eeb0bd8f01);
+            
+    
+            var popup_68e2cabeb77c4a2a9f8c1f8098290e2e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6c9af4c10a93459ea6c60b8de9e071ec = $('<div id="html_6c9af4c10a93459ea6c60b8de9e071ec" style="width: 100.0%; height: 100.0%;"><횡단보도> 06-0000016324</div>')[0];
+                popup_68e2cabeb77c4a2a9f8c1f8098290e2e.setContent(html_6c9af4c10a93459ea6c60b8de9e071ec);
+            
+
+            marker_8d3c16a5f4684b698d3e3c2d771e1d19.bindPopup(popup_68e2cabeb77c4a2a9f8c1f8098290e2e)
+            ;
+
+            
+        
+    
+        var marker_c0d2b30899b64f89bfeb2fd76ab927f0 = L.marker(
+            [37.6248794, 127.0716071],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_a0ed336b6d564126958f5534dc0171be);
+        
+    
+
+                var icon_776a3a887b314135898c0317321c28c8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'purple',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c0d2b30899b64f89bfeb2fd76ab927f0.setIcon(icon_776a3a887b314135898c0317321c28c8);
+            
+    
+            var popup_7393af5172254096a3b47e676978d03f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8d998fa55fd240259ead0ba9391051c2 = $('<div id="html_8d998fa55fd240259ead0ba9391051c2" style="width: 100.0%; height: 100.0%;"><횡단보도> 06-0000016533</div>')[0];
+                popup_7393af5172254096a3b47e676978d03f.setContent(html_8d998fa55fd240259ead0ba9391051c2);
+            
+
+            marker_c0d2b30899b64f89bfeb2fd76ab927f0.bindPopup(popup_7393af5172254096a3b47e676978d03f)
+            ;
+
+            
+        
+    
+        var marker_8b9c18ad650a488aa926a08dc11d5028 = L.marker(
+            [37.625741999999995, 127.072896],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_105dc3857f84406f9e7e62554608d57f);
+        
+    
+
+                var icon_09f4c03a131647baa411d16ad0a63b71 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8b9c18ad650a488aa926a08dc11d5028.setIcon(icon_09f4c03a131647baa411d16ad0a63b71);
+            
+    
+            var popup_c91cfafa9274458ab85ff16583e34be8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a32e23f6a064445e9ece5ab7a54ba115 = $('<div id="html_a32e23f6a064445e9ece5ab7a54ba115" style="width: 100.0%; height: 100.0%;"><지하철> 공릉</div>')[0];
+                popup_c91cfafa9274458ab85ff16583e34be8.setContent(html_a32e23f6a064445e9ece5ab7a54ba115);
+            
+
+            marker_8b9c18ad650a488aa926a08dc11d5028.bindPopup(popup_c91cfafa9274458ab85ff16583e34be8)
+            ;
+
+            
+        
+    
+
+            var circle_6ed0e593ce124741908c819bbf4aa1d6 = L.circle(
+                [37.62522888183594, 127.0717315673828],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 300,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_105dc3857f84406f9e7e62554608d57f);
+            
+    
+            var popup_d6c5968946dd4cec9fa55d4a1a0592b6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_119f7795ba5d4d2293e64a5f0b3a591c = $('<div id="html_119f7795ba5d4d2293e64a5f0b3a591c" style="width: 100.0%; height: 100.0%;"><상권> 동일로191길</div>')[0];
+                popup_d6c5968946dd4cec9fa55d4a1a0592b6.setContent(html_119f7795ba5d4d2293e64a5f0b3a591c);
+            
+
+            circle_6ed0e593ce124741908c819bbf4aa1d6.bindPopup(popup_d6c5968946dd4cec9fa55d4a1a0592b6)
+            ;
+
+            
+        
+</script>
